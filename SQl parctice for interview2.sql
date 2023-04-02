@@ -1,0 +1,27 @@
+use hr;
+select * from employee; 
+select * from employee where Salary>12000;
+select * from employee where department_ID=30;
+select * from employee where commission_PCT=null;
+select distinct Employee_ID from employee;
+select distinct First_Name from employee;
+select * from employee where salary between 9000 and 24000;
+select * from employee where salary>=9000 and salary<=24000;
+select * from employee where salary not between 9000 and 12000;
+select * from employee where salary>15000 and job_ID='AD_VP';
+select * from employee where salary>9000 or Manager_ID=110;
+select * from employee where not Department_ID=90;
+select * from employee where First_Name like'S%';
+select * from employee where First_Name like'D%';
+select * from employee where Last_Name like '%r';
+select * from employee where last_name like 'k%g';
+select * from employee where last_name like '%a_';
+select * from employee where last_name like '_e%';
+select * from employee where last_name like '%_g';
+select upper(first_name) from employee;
+select lower(last_name) from employee;
+select length(last_name) from employee;
+select length(salary) from employee;
+
+use sakila;
+select * from actor;

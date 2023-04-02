@@ -1,0 +1,10 @@
+use mydb;
+select curdate();
+select current_date();
+select curtime();
+select current_time();
+select now();
+select sysdate();
+select month('2022-11-25');
+select year('2022-11-25');
+select day('2022-11-25');
